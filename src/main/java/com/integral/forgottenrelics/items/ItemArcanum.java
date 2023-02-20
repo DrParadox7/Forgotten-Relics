@@ -93,7 +93,7 @@ public void onWornTick(ItemStack itemstack, EntityLivingBase entity) {
 	
 	if (wandList.size() > 0) {
 		
-	Aspect randomAspect = primalAspects.get((int) (Math.random() * 5));
+	Aspect randomAspect = primalAspects.get((int) (Math.random() * 6));
 	
 	ItemStack randomWand = SuperpositionHandler.getRandomValidWand(wandList, randomAspect);
 	
