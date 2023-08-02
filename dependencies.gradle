@@ -1,0 +1,6 @@
+// Add your dependencies here
+
+dependencies {
+    compileOnly('thaumcraft:Thaumcraft:1.7.10-4.2.3.5:dev')
+    compileOnly('com.github.GTNewHorizons:Baubles:1.0.1.16:dev')
+}
