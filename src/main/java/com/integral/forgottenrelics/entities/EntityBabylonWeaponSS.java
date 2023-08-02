@@ -223,7 +223,6 @@ public class EntityBabylonWeaponSS extends EntityThrowableCopy {
 
 	@Override
 	public void writeEntityToNBT(NBTTagCompound cmp) {
-		super.writeEntityToNBT(cmp);
 		cmp.setBoolean(TAG_CHARGING, isCharging());
 		cmp.setInteger(TAG_VARIETY, getVariety());
 		cmp.setInteger(TAG_CHARGE_TICKS, getChargeTicks());
@@ -234,7 +233,6 @@ public class EntityBabylonWeaponSS extends EntityThrowableCopy {
 
 	@Override
 	public void readEntityFromNBT(NBTTagCompound cmp) {
-		super.readEntityFromNBT(cmp);
 		setCharging(cmp.getBoolean(TAG_CHARGING));
 		setVariety(cmp.getInteger(TAG_VARIETY));
 		setChargeTicks(cmp.getInteger(TAG_CHARGE_TICKS));
@@ -291,4 +289,8 @@ public class EntityBabylonWeaponSS extends EntityThrowableCopy {
 		dataWatcher.updateObject(25, rot);
 	}
 
+	@Override
+	public void setThrowableHeading(double p_70186_1_, double p_70186_3_, double p_70186_5_, float p_70186_7_, float p_70186_8_) {
+
+	}
 }
