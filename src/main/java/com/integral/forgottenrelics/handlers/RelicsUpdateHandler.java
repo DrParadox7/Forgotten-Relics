@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 import com.integral.forgottenrelics.Main;
 
+import com.integral.forgottenrelics.Tags;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ChatComponentText;
@@ -19,7 +20,7 @@ import net.minecraftforge.event.entity.EntityJoinWorldEvent;
  */
 
 public class RelicsUpdateHandler {
-	private static String currentVersion = Main.VERSION + " " + Main.RELEASE_TYPE;
+	private static String currentVersion = Tags.VERSION + " " + Tags.VERSION;
 	private static String newestVersion;
 	public static String updateStatus = null;
 	public static boolean show = false;
